@@ -1,5 +1,5 @@
 [project]
-name = "big_data"
+name = "work"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -7,10 +7,14 @@ authors = [
     { name = "justinreal", email = "justin.real@edu.ece.fr" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "faker>=40.37.0",
+]
 
 [project.scripts]
-big_data = "uv_work:main"
+work = "work:main"
+dataset-users = "work.dataset_users:main"
+dataset-orders = "work.dataset_orders:main"
 
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
